@@ -52,3 +52,4 @@ jobs:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: .\build\x64\Release\
         asset_name: .*.exe
+        asset_type: application/octet-stream
