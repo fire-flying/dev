@@ -50,6 +50,6 @@ jobs:
         GITHUB_TOKEN: ${{ github.token }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: ./build/x64/Release/
-        asset_name: .*.exe
+        asset_path: ./build/x64/Release/dev.exe
+        asset_name: res.exe
         asset_content_type: application/octet-stream
