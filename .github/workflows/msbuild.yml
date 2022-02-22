@@ -45,7 +45,7 @@ jobs:
         release_name: Release ${{ github.ref }}
 
     - name: upload windows x64 artifact
-      uses: actions/upload-release-asset@v1
+      uses: fire-flying/upload-release-asset@v1
       env:
         GITHUB_TOKEN: ${{ github.token }}
       with:
