@@ -1,5 +1,5 @@
 # pwd
-
+mkdir "..\bin\" 
 # cpoy artifact
 Get-ChildItem "./" -Include *.exe, *.pdb -Recurse | ForEach-Object { 
     if ( $_.FullName.Contains("\vc142.pdb")) {
