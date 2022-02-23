@@ -50,17 +50,17 @@ jobs:
         GITHUB_TOKEN: ${{ github.token }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: ./build/x64/Release/dev.exe
-        asset_name: dev.exe
-        asset_content_type: application/octet-stream
+        asset_path: ./file.zip
+        asset_name: file.zip
+        asset_content_type: application/x-zip-compressed   
         
         
-    - name: upload windows x64 sym
-      uses: fire-flying/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ github.token }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: ./build/x64/Release/dev.pdb
-        asset_name: dev.pdb
-        asset_content_type: application/octet-stream
+    # - name: upload windows x64 sym
+    #   uses: fire-flying/upload-release-asset@v1
+    #   env:
+    #     GITHUB_TOKEN: ${{ github.token }}
+    #   with:
+    #     upload_url: ${{ steps.create_release.outputs.upload_url }}
+    #     asset_path: ./build/x64/Release/dev.pdb
+    #     asset_name: dev.pdb
+    #     asset_content_type: application/octet-stream
